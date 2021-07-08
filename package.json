@@ -6,14 +6,14 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^7.8.1",
-    "eslint-config-athom": "^2.1.0",
-    "homey": "^2.7.0"
+    "eslint": "^7.30.0",
+    "eslint-config-athom": "^2.1.1",
+    "homey": "^2.20.3"
   },
   "dependencies": {
-    "homey-zigbeedriver": "^1.5.0",
-    "homey-zwavedriver": "^1.0.3",
-    "zigbee-clusters": "^1.3.1"
+    "homey-zigbeedriver": "^1.6.5",
+    "homey-zwavedriver": "^1.0.4",
+    "zigbee-clusters": "^1.4.1"
   },
   "engines": {
     "node": ">=12.16.1"
