@@ -1,6 +1,7 @@
 {
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.se.wiserapp",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "brandColor": "#3DCD58",
@@ -421,7 +422,9 @@
             ]
           },
           "21": {
-            "clusters": [],
+            "clusters": [
+              65303
+            ],
             "bindings": []
           }
         }
@@ -467,6 +470,43 @@
               "attr": {
                 "min": 0,
                 "max": 86400
+              }
+            }
+          ]
+        },
+        {
+          "id": "backlight_mode",
+          "type": "dropdown",
+          "value": "consistentWithLoad",
+          "label": {
+            "en": "Backlight Mode"
+          },
+          "hint": {
+            "en": "Default: Consistent with load"
+          },
+          "values": [
+            {
+              "id": "consistentWithLoad",
+              "label": {
+                "en": "Consistent with load"
+              }
+            },
+            {
+              "id": "reverseWithLoad",
+              "label": {
+                "en": "Reverse with load"
+              }
+            },
+            {
+              "id": "alwaysOn",
+              "label": {
+                "en": "Always on"
+              }
+            },
+            {
+              "id": "alwaysOff",
+              "label": {
+                "en": "Always off"
               }
             }
           ]
@@ -1006,8 +1046,8 @@
             "nl": "Dim snelheid"
           },
           "hint": {
-            "en": "This parameter (196) determines the dimming speed. Values: 0 - 240 seconds, 0: Instantly. Default: 3",
-            "nl": "Deze parameter (196) bepaalt de standaard dim transitietijd in seconden. Waardes: 0 - 240 seconden, 0: Instantaan. Standaard: 3"
+            "en": "This parameter ({{zwaveParameterIndex}}) determines the dimming speed. Values: 0 - 240 seconds, 0: Instantly. Default: 3",
+            "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de standaard dim transitietijd in seconden. Waardes: 0 - 240 seconden, 0: Instantaan. Standaard: 3"
           },
           "zwave": {
             "index": 196,

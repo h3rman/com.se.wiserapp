@@ -1,6 +1,6 @@
 {
   "name": "com.se.wiserapp",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "app.js",
   "scripts": {
     "lint": "eslint ."

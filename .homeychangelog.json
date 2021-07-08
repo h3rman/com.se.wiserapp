@@ -10,5 +10,8 @@
   },
   "0.2.3": {
     "en": "Added support for Z-Wave ZW_MTN50x6xx devices."
+  },
+  "0.2.4": {
+    "en": "Updated icon. Backlight setting for push button switch."
   }
 }

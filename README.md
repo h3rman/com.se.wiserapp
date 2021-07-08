@@ -1,8 +1,13 @@
-# Schnieder Electric Wiser
+# Schnieder Electric
 
-Adds support for Schnieder Electric Wiser devices
+Homey app for for use with Schnieder Electric devices without gateway.
 
 ### Changelog
+v0.2.4-test
+- Updated main icon.
+- Added setting Backlight Mode in driver ZB_NHPB_SWITCH_1 (how the small LED should indicate device on/off status)
+- Verified zigbee driver ZB_NHPB_SWITCH_1: Push button switch (WDE00x348)
+
 v0.2.3
 - Added support for Z-Wave ZW_MTN50x6xx devices.
 
