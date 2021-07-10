@@ -11,6 +11,7 @@
     "homey": "^2.20.3"
   },
   "dependencies": {
+    "homey-log": "^2.0.1",
     "homey-zigbeedriver": "^1.6.5",
     "homey-zwavedriver": "^1.0.4",
     "zigbee-clusters": "^1.4.1"
