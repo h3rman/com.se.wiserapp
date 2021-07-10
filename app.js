@@ -15,7 +15,8 @@ class WiserApp extends Homey.App {
 
     this.triggerButton1_scene
       .getArgument('scene')
-      .registerAutocompleteListener((query, args, callback) => args.device.onSceneAutocomplete(query, args, callback));
+      .registerAutocompleteListener((query, args, callback) =>
+        args.device.onSceneAutocomplete(query, args, callback));
 
     this.actionZWStartDimLevelChange = this.homey.flow
       .getActionCard('action_ZW_DIM_startLevelChange');
@@ -56,7 +57,8 @@ class WiserApp extends Homey.App {
             'Step Size': 1,
           };
         }
-        return await args.device.node.CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_START_LEVEL_CHANGE(startLevelChangeObj);
+        return await args.device.node.CommandClass
+          .COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_START_LEVEL_CHANGE(startLevelChangeObj);
       } catch (error) {
         args.device.log(error.message);
         return Promise.reject(new Error(error.message));
@@ -69,7 +71,8 @@ class WiserApp extends Homey.App {
     if (args.device.hasCommandClass('SWITCH_MULTILEVEL')) {
       try {
         args.device.log('FlowCardAction triggered to stop dim level change');
-        return await args.device.node.CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_STOP_LEVEL_CHANGE({});
+        return await args.device.node.CommandClass
+          .COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_STOP_LEVEL_CHANGE({});
       } catch (error) {
         args.device.log(error.message);
         return Promise.reject(new Error(error.message));
